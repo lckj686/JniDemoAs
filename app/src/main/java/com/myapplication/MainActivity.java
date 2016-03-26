@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity  {
 //        }
 
 
-        ((TextView) findViewById(R.id.txt)).setText(""+sum);
+        ((TextView) findViewById(R.id.txt)).setText("123"+sum);
 
 
 
