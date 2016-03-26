@@ -1,0 +1,2 @@
+# JniDemoAs
+android  studio  jni
