@@ -1,4 +1,4 @@
-#include "hello.h"
+#include "sum_demo.h"
 
 extern int sum(int a, int b) {
     int s1 = sub1(a, b);
