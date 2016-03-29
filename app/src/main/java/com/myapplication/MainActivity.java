@@ -13,23 +13,25 @@ public class MainActivity extends AppCompatActivity  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         ForkNativeUtil jniUtil = new ForkNativeUtil();
+        int pid = jniUtil.forke();
+        String ss = "";
+        if (pid == 0) {
+            ss = "pid = 0 ";
+            Log.d("pid123", "=-----000000-------");
+        } else {
+            ss = "pid =  " + pid;
+            Log.d("pid123", "=------------" + pid);
+        }
+
+        super.onCreate(savedInstanceState);
 
 
         //String s = jniUtil.getCLanguageString();
 
         setContentView(R.layout.activity_main);
 
-        int pid = jniUtil.forke();
-        String ss = "";
-        if (pid == 0) {
-            ss = "pid = 0 ";
-            Log.d("pid", "=------------");
-        } else {
-            ss = "pid =  " + pid;
-            Log.d("pid", "=------------" + pid);
-        }
+
 
 
         SumNativeUtil sumNativeUtil = new SumNativeUtil();

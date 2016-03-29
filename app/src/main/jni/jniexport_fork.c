@@ -5,7 +5,7 @@
 #include "jniexport_method.h"
 
 
-JNIEXPORT jint JNICALL Java_com_myapplication_jni_JniUtil_forke
+JNIEXPORT jint JNICALL Java_com_jni_ForkNativeUtil_forke
         (JNIEnv *env, jobject obj){
 
     return fork();
